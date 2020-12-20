@@ -11,7 +11,18 @@
 .navbar-toggler {
   background: #ffffff;
 }
-nav {
+.smart-scroll{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down{
+   transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+   transform:translateY(0); transition: all 0.3s ease-in-out;
 }
 .header {
   font-size: 1.75em;
@@ -36,6 +47,7 @@ section {
 article {
   background: #000000;
   border: 1px solid rgb(180, 15, 15);
+  color: rgb(242, 255, 0);
   float: left;
   margin: 15px;
   margin-left: 1.666666667%;
@@ -43,6 +55,7 @@ article {
   overflow-y: auto;
   padding: 50px 15px 20px 15px;
   position: relative;
+  text-align: justify;
 }
 h1 {
   color: rgb(180, 15, 15);
